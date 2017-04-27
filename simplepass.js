@@ -1,10 +1,10 @@
 //type checkString below
 function checkString(str){
   if(str.length < 8 || str.length > 20){
-    throw new Error(str+"does not work");
+    throw new Error(str+" does not work");
   }
   else{
-    return str;
+    console.log(str+" works as your password");
   }
 }
 
@@ -16,6 +16,9 @@ function getString(str){
   }
   catch(e){
     console.log(e.message);
-    getString(str);
+    getString("rrrrrrrrrrrrrr");
   }
 }
+
+
+getString("asdf");
